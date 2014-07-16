@@ -21,8 +21,6 @@ namespace Game2D.Game
         //данные
         DStateMain _state = new DStateMain();
 
-        List<byte> symbols = new List<byte>();
-        string s = "";
         public Frame Process(IGetKeyboardState keyboard)
         {
 
@@ -41,7 +39,6 @@ namespace Game2D.Game
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
             }
-            frame.Add(new Sprite(ESprite.tank2, new Vector2(5, 5, 30), new Point2(8, 4)));
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);
             return frame;
