@@ -54,10 +54,13 @@ namespace Game2D
         {
             LoadSpritesAuto();
             Sprites[ESprite.explosion.ToString()].horFrames = Sprites[ESprite.explosion.ToString()].vertFrames = 4;
-           
-            //стрелки не работают пока что, как и ctrl alt shift, F1-F12.
-            /// коды, меньшие 128. Если нажато с shift или ctrl, код отличается от простого нажатия.
-            /// Русские буквы - большие и маленькие - преобразуются в английские согласно стандартной клавиатуре
+
+            // Про коды клавиш:
+            // везде, где есть латинская буква, код клавиши равен коду большой латинской буквы ('ф'='A' = 65). 
+            // где нет латинской буквы, с зажатым и нет shift получаются разные коды.
+            // f1-f12 : 131-142.
+            // shift,ctrl,alt : 160-165.
+            // Остальное по стандарту. 
             Keys.Add(EKeyboardAction.Fire, 32);
             Keys.Add(EKeyboardAction.Esc, 27);
             Keys.Add(EKeyboardAction.Enter, 13);

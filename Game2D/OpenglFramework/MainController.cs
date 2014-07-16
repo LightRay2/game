@@ -126,13 +126,13 @@ namespace Game2D.Opengl
 
         public void KeySpecialUp(int key, int x, int y)
         {
-            if (key >= 0 && key <= 1) _keyboardState.KeyUp((byte)(key + 12)); //f1-f12
+            if (key >= 0 && key <= 11) _keyboardState.KeyUp((byte)(key + 131)); //f1-f12
             if (key >= 100 && key <= 103) _keyboardState.KeyUp((byte)(key -63)); //arrows
         }
 
         public void KeySpecial(int key, int x, int y)
         {
-            if (key >= 0 && key <= 1) _keyboardState.KeyPress((byte)(key + 12)); //f1-f12
+            if (key >= 0 && key <= 11) _keyboardState.KeyPress((byte)(key + 131)); //f1-f12
             if (key >= 100 && key <= 103) _keyboardState.KeyPress((byte)(key - 63)); //arrows
         }
 
