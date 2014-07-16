@@ -36,25 +36,6 @@ namespace Game2D.Game
 
             if (_state.wish == DStateMain.EWish.joinServer)
                 _networkController.Connect(_state);
-
-
-
-            symbols.AddRange(keyboard.GetPressedKeys());
-            //=  Encoding.GetEncoding(866).GetString(keyboard.GetSymbols().ToArray());
-            foreach (byte b in keyboard.GetPressedKeys())
-            {
-               // s +== Encoding.GetEncoding(866).GetString(new byte[]{b});
-                //  
-
-            }
-
-            string str = "";
-            s += keyboard.GetEnteredString();
-            foreach (var a in symbols) str += a.ToString() + " ";
-            frame.Add(new Text(EFont.fiol, 5,5,2,4,str));
-            frame.Add(new Text(EFont.fiol, 5, 10, 2, 4, s));
-
-
             //-----------------тут все игровые компоненты должны быть---------------------------------
             if (_state.state == DStateMain.EState.inBattle)
             {
