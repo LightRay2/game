@@ -18,6 +18,8 @@ namespace Game2D.Game
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
 
+        ACameraMover _cameraMoover = new ACameraMover();
+
         //данные
         DStateMain _state = new DStateMain();
 
@@ -38,6 +40,8 @@ namespace Game2D.Game
             if (_state.state == DStateMain.EState.inBattle)
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
+
+                _cameraMoover.Process(serverCommands, _state, ref frame, keyboard);
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);
