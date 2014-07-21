@@ -33,10 +33,12 @@ namespace Game2D.Game.Concrete
                     {
                         state.battle = new DBattle();
                         ComConnectionResult com = ((ComConnectionResult)c);
-                        DPlayer me = state.battle.me;
-                        me = CreateNewPlayer(com.playerID, com.nickname);
+
+                        DPlayer me = CreateNewPlayer(com.playerID, com.nickname);
                         me.controlled = true;
                         me.tank.controlled = true;
+                        
+                        state.battle.me = me;
                         state.battle.players.Add(me);
                     }
 

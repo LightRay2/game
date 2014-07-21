@@ -14,8 +14,9 @@ namespace Game2D
     public enum EFont {  orange, fiol,  green,lilac, end }
     
     //действия, которые поддерживает клавиатура. Должны быть привязаны конкретные кнопки в конструкторе
-    public enum EKeyboardAction { Fire, Esc, Enter, 
-        Left, Right, Up, Down, 
+    public enum EKeyboardAction { Fire, Esc, Enter,
+        Left, Right, Up, Down,
+        CamLeft, CamRight, CamUp, CamDown,
         D0, D1, D2, D3, D4, D5, D6, D7, D8, D9,
         end };
 
@@ -68,6 +69,11 @@ namespace Game2D
             Keys.Add(EKeyboardAction.Up, 38);
             Keys.Add(EKeyboardAction.Right, 39);
             Keys.Add(EKeyboardAction.Down, 40);
+
+            Keys.Add(EKeyboardAction.CamLeft, 37);
+            Keys.Add(EKeyboardAction.CamUp, 38);
+            Keys.Add(EKeyboardAction.CamRight, 39);
+            Keys.Add(EKeyboardAction.CamDown, 40);
 
             byte i = 0;
             for(EKeyboardAction a = EKeyboardAction.D0; a <= EKeyboardAction.D9; a++)

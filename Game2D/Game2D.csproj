@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Game\Concrete\ACameraMover.cs" />
     <Compile Include="Config\Config.cs" />
+    <Compile Include="Game\Concrete\ATankDriver.cs" />
     <Compile Include="Game\Concrete\Local\MenuMain.cs" />
     <Compile Include="Game\Concrete\Network\NetworkController.cs" />
     <Compile Include="Game\Concrete\Battle\PlayerManager.cs" />

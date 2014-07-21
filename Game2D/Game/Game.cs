@@ -14,11 +14,12 @@ namespace Game2D.Game
     {
         //компоненты
         MenuMain _menuMain = new MenuMain();
-        TankDriverSimple _tankDriver = new TankDriverSimple();
+        //TankDriverSimple _tankDriver = new TankDriverSimple();
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
 
         ACameraMover _cameraMoover = new ACameraMover();
+        ATankDriver _tankDriver = new ATankDriver();
 
         //данные
         DStateMain _state = new DStateMain();
@@ -42,6 +43,7 @@ namespace Game2D.Game
                 _playerManaged.Process(serverCommands, _state, ref frame);
 
                 _cameraMoover.Process(serverCommands, _state, ref frame, keyboard);
+                _tankDriver.Process(serverCommands, _state, ref frame, keyboard);
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);
