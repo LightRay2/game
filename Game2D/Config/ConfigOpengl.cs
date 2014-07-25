@@ -10,13 +10,16 @@ namespace Game2D
     //Доступные спрайты. end - чтобы можно было легко пробежать по всем
     //чтобы работала автозагрузка, пути к файлам должны быть: textures/background.png, font/orange.png
     //(т.е. только png)
-    public enum ESprite { background, menuback, shell0,tank0, tank1, tank2,explosion, end }
+    public enum ESprite { background, menuback, shell0,tank0, tank1, tank2,explosion,
+        shootMarkBright, shootMarkDark, gunMarkBright, gunMarkDark,
+        end }
     public enum EFont {  orange, fiol,  green,lilac, end }
     
     //действия, которые поддерживает клавиатура. Должны быть привязаны конкретные кнопки в конструкторе
     public enum EKeyboardAction { Fire, Esc, Enter, 
         Left, Right, Up, Down, 
         D0, D1, D2, D3, D4, D5, D6, D7, D8, D9,
+        gunLeft, gunRight,
         end };
 
     class ConfigOpengl
@@ -44,8 +47,8 @@ namespace Game2D
         //сопоставили действия клавиатуры с конкретными клавишами
         static public readonly Dictionary<EKeyboardAction, byte> Keys= new Dictionary<EKeyboardAction,byte>();
 
-        public const double ScreenWidth = 133;
-        public const double ScreenHeight = 100;
+        public const double ScreenWidth = 100;
+        public const double ScreenHeight = 75;
         public const int TimePerFrame = 20; //в миллисекундах
         public static string WindowName = "Early versions";
         
@@ -68,6 +71,8 @@ namespace Game2D
             Keys.Add(EKeyboardAction.Up, 38);
             Keys.Add(EKeyboardAction.Right, 39);
             Keys.Add(EKeyboardAction.Down, 40);
+            Keys.Add(EKeyboardAction.gunLeft, (byte)'A');
+            Keys.Add(EKeyboardAction.gunRight, (byte)'D');
 
             byte i = 0;
             for(EKeyboardAction a = EKeyboardAction.D0; a <= EKeyboardAction.D9; a++)

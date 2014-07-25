@@ -10,5 +10,6 @@ namespace Game2D.Game.DataClasses
         public bool controlled; //управляет ли им наш клиент 
         public int ID;
         public DTankBody body;
+        public DLighthouse lighthouse;
     }
 }

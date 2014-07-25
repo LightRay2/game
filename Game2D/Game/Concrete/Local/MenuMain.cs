@@ -12,8 +12,8 @@ namespace Game2D.Game.Concrete
         #region переменные и конструктор
         const EFont MAIN_FONT = EFont.fiol;
         const EFont SELECTED_FONT = EFont.orange;
-        readonly Point2 POS = new Point2(50, 20);
-        readonly Point2 TANK_POS = new Point2(25, 80);
+        readonly Point2 POS = new Point2(38, 15);
+        readonly Point2 TANK_POS = new Point2(18, 60);
 
         MenuItem _itemsHead ;
         ConnectionInfo _connectionInfo;
@@ -86,7 +86,7 @@ namespace Game2D.Game.Concrete
             
             ESprite spr = state.battleConfig.tank == BattleConfig.ETank.first? ESprite.tank0 : 
                 (state.battleConfig.tank==BattleConfig.ETank.second ? ESprite.tank1 : ESprite.tank2);
-            frame.Add(new Sprite(spr, new Vector2(TANK_POS.x, TANK_POS.y, _time % 360), 20, 10));
+            frame.Add(new Sprite(spr, new Vector2(TANK_POS.x, TANK_POS.y, _time % 360), 12, 6));
             
             _time++;
         }

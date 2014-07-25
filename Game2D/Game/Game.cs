@@ -7,6 +7,7 @@ using Game2D.Game.Concrete;
 using Game2D.Game.DataClasses;
 using Game2D.Game.Helpers;
 using Utils.Commands;
+using Game2D.Game.Concrete.Battle;
 
 namespace Game2D.Game
 {
@@ -17,6 +18,7 @@ namespace Game2D.Game
         TankDriverSimple _tankDriver = new TankDriverSimple();
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
+        ShootingMain _shootingMain = new ShootingMain();
 
         //данные
         DStateMain _state = new DStateMain();
@@ -38,6 +40,7 @@ namespace Game2D.Game
             if (_state.state == DStateMain.EState.inBattle)
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
+                _shootingMain.Process(serverCommands, _state, keyboard, ref frame);
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);
