@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using Utils;
 
 namespace Game2D.Game.Helpers
 {
@@ -25,6 +26,18 @@ namespace Game2D.Game.Helpers
                     byte[] array = Encoding.UTF8.GetBytes(s); //todo тут лажа, строка только 256 символов может быть
                     binary.Write((byte)array.Length);
                     binary.Write(array);
+                }
+                else if (v is Point2)
+                {
+                    binary.Write(((Point2)v).x);
+                    binary.Write(((Point2)v).y);
+                }
+                else if (v is Vector2)
+                {
+                    binary.Write(((Vector2)v).x);
+                    binary.Write(((Vector2)v).y);
+                    binary.Write(((Vector2)v).vx);
+                    binary.Write(((Vector2)v).vy);
                 }
                 else throw new Exception("Encoder: тип данных не поддерживается");
             }
@@ -69,6 +82,24 @@ namespace Game2D.Game.Helpers
             BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()));
             message.RemoveRange(0, 1);
             return reader.ReadByte();
+        }
+        /// <summary>
+        /// делает 2 вещи - возвращает переменную и удаляет считанное из message. Возможен вылет с exception
+        /// </summary>
+        public static Point2 GetPoint(ref List<byte> message)
+        {
+            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()));
+            message.RemoveRange(0, 16);
+            return new Point2( reader.ReadDouble(), reader.ReadDouble());
+        }
+        /// <summary>
+        /// делает 2 вещи - возвращает переменную и удаляет считанное из message. Возможен вылет с exception
+        /// </summary>
+        public static Vector2 GetVector(ref List<byte> message)
+        {
+            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()));
+            message.RemoveRange(0, 32);
+            return new Vector2(reader.ReadDouble(), reader.ReadDouble(), reader.ReadDouble(), reader.ReadDouble());
         }
     }
 }

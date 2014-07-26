@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game2D
+namespace Utils
 {
     /// <summary>
     /// точка (или вектор, или размер), есть нормализация, расстояние, угол, перегрузка плюса и минуса
@@ -60,16 +60,15 @@ namespace Game2D
         {
             return new Point2(a.x - b.x, a.y - b.y);
         }
-
         public static Point2 operator *(Point2 a, double b)
         {
-            return new Point2(a.x *b, a.y *b);
+            return new Point2(a.x * b, a.y * b);
         }
 
-        public static Point2 operator /(Point2 a,  double b)
+        public static Point2 operator /(Point2 a, double b)
         {
             if (b == 0) throw new Exception("Будь внимательнее ;)");
-            return new Point2(a.x /b, a.y /b);
+            return new Point2(a.x / b, a.y / b);
         }
 
     }

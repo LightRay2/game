@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game\Concrete\PlayerController.cs" />
+    <Compile Include="Game\Concrete\ServerShellCreator.cs" />
     <Compile Include="Game\DataClasses\Main\DBattle.cs" />
     <Compile Include="Game\DataClasses\Main\DPlayer.cs" />
     <Compile Include="Game\DataClasses\Main\DStateMain.cs" />

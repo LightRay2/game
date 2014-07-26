@@ -18,6 +18,7 @@ namespace gameserver.Game
             List<Command> r = new List<Command>();
 
             r.AddRange(_playerController.Process(commands,_state));
+            double[] x= Utils.Helpers.HRandomDoubleGroup.GetRandomGroup(199);
             return r;
         }
     }

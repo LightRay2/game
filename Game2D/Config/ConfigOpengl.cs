@@ -47,8 +47,8 @@ namespace Game2D
         //сопоставили действия клавиатуры с конкретными клавишами
         static public readonly Dictionary<EKeyboardAction, byte> Keys= new Dictionary<EKeyboardAction,byte>();
 
-        public const double ScreenWidth = 100;
-        public const double ScreenHeight = 75;
+        public const double ScreenWidth = 160;
+        public const double ScreenHeight = 120;
         public const int TimePerFrame = 20; //в миллисекундах
         public static string WindowName = "Early versions";
         
