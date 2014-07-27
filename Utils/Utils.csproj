@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boxes\ValueBox.cs" />
     <Compile Include="Commands\Command%28base class%29.cs" />
     <Compile Include="Commands\ForConnection.cs" />
     <Compile Include="Commands\NetworkOrganisation.cs" />

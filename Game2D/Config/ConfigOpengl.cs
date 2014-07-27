@@ -12,6 +12,7 @@ namespace Game2D
     //(т.е. только png)
     public enum ESprite { background, menuback, shell0,tank0, tank1, tank2,explosion,
         shootMarkBright, shootMarkDark, gunMarkBright, gunMarkDark,
+        AimEllipse,
         end }
     public enum EFont {  orange, fiol,  green,lilac, end }
     
@@ -19,7 +20,7 @@ namespace Game2D
     public enum EKeyboardAction { Fire, Esc, Enter, 
         Left, Right, Up, Down, 
         D0, D1, D2, D3, D4, D5, D6, D7, D8, D9,
-        gunLeft, gunRight,
+        gunLeft, gunRight, gunEllipse, gunUp, gunDown, gunChange,
         end };
 
     class ConfigOpengl
@@ -73,6 +74,10 @@ namespace Game2D
             Keys.Add(EKeyboardAction.Down, 40);
             Keys.Add(EKeyboardAction.gunLeft, (byte)'A');
             Keys.Add(EKeyboardAction.gunRight, (byte)'D');
+            Keys.Add(EKeyboardAction.gunEllipse, (byte)'F');
+            Keys.Add(EKeyboardAction.gunUp, (byte)'W');
+            Keys.Add(EKeyboardAction.gunDown, (byte)'S');
+            Keys.Add(EKeyboardAction.gunChange, (byte)'E');
 
             byte i = 0;
             for(EKeyboardAction a = EKeyboardAction.D0; a <= EKeyboardAction.D9; a++)
