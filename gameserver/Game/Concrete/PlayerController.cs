@@ -27,6 +27,12 @@ namespace gameserver.Game.Concrete
 
                     state.battle.players.Add(new DPlayer(com.clientID, com.nickname, new DTank()));
                 }
+                else if (c is ComIngameChat)
+                {
+                    ComIngameChat cmd = c as ComIngameChat;
+                    foreach (DPlayer p in state.battle.players)
+                        r.Add(new ComIngameChat(cmd.Id,cmd.Message) {clientID = p.id});
+                }
             }
             return r;
         }

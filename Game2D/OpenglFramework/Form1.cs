@@ -19,6 +19,7 @@ namespace Game2D
             CGL.InitializeContexts();
             InputLanguage.CurrentInputLanguage
                 = InputLanguage.FromCulture(new System.Globalization.CultureInfo("en-US"));
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

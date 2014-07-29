@@ -17,6 +17,7 @@ namespace Utils.Commands
             typeof(ComConnectionResult), 
             typeof(ComAddPlayer),
             typeof(ComRemovePlayer),
+            typeof(ComIngameChat),
             typeof(ComReceivedCommandsCount),//служебная
         };
 

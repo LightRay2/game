@@ -17,6 +17,7 @@ namespace Game2D.Game
         TankDriverSimple _tankDriver = new TankDriverSimple();
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
+        ChatManager chatManager = new ChatManager();
 
         //данные
         DStateMain _state = new DStateMain();
@@ -38,6 +39,7 @@ namespace Game2D.Game
             if (_state.state == DStateMain.EState.inBattle)
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
+                createdCommands.AddRange(chatManager.Process(serverCommands,_state,keyboard,ref frame));
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);

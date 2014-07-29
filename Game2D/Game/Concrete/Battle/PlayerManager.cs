@@ -41,14 +41,7 @@ namespace Game2D.Game.Concrete
                         state.battle.me = me;
                         state.battle.players.Add(me);
                     }
-
                 }
-            }
-            if (state.battle != null)
-            {
-                List<string> text = new List<string>();
-                foreach (DPlayer p in state.battle.players) text.Add(p.nickname + " (ID = " + p.id.ToString() + ")");
-                frame.Add(new Text(EFont.lilac, 10, 90, 0.7, 2, text.ToArray()));
             }
         }
 

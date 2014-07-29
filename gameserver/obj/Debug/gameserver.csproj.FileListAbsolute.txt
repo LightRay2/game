@@ -69,3 +69,14 @@ D:\docum\_PROJECTS\_EarlyVersions\gameserver\obj\Debug\gameserver.Properties.Res
 D:\docum\_PROJECTS\_EarlyVersions\gameserver\obj\Debug\GenerateResource.read.1.tlog
 D:\docum\_PROJECTS\_EarlyVersions\gameserver\obj\Debug\GenerateResource.write.1.tlog
 D:\docum\_PROJECTS\_EarlyVersions\gameserver\obj\Debug\gameserver.pdb
+D:\Временное\game\gameserver\bin\Debug\gameserver.exe.config
+D:\Временное\game\gameserver\obj\Debug\gameserver.exe
+D:\Временное\game\gameserver\obj\Debug\gameserver.pdb
+D:\Временное\game\gameserver\bin\Debug\gameserver.exe
+D:\Временное\game\gameserver\bin\Debug\gameserver.pdb
+D:\Временное\game\gameserver\bin\Debug\Utils.dll
+D:\Временное\game\gameserver\bin\Debug\Utils.pdb
+D:\Временное\game\gameserver\obj\Debug\gameserver.csprojResolveAssemblyReference.cache
+D:\Временное\game\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\Временное\game\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\Временное\game\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache

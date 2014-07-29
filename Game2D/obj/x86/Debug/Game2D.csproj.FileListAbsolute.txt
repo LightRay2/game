@@ -58,3 +58,13 @@ D:\docum\_PROJECTS\_EarlyVersions\Game2D\bin\Debug\Game2D.exe
 D:\docum\_PROJECTS\_EarlyVersions\Game2D\bin\Debug\Game2D.pdb
 D:\docum\_PROJECTS\_EarlyVersions\Game2D\bin\Debug\Utils.dll
 D:\docum\_PROJECTS\_EarlyVersions\Game2D\bin\Debug\Utils.pdb
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.exe
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.pdb
+D:\Временное\game\Game2D\bin\Debug\Game2D.exe
+D:\Временное\game\Game2D\bin\Debug\Game2D.pdb
+D:\Временное\game\Game2D\bin\Debug\Utils.dll
+D:\Временное\game\Game2D\bin\Debug\Utils.pdb
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.csprojResolveAssemblyReference.cache
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.Form1.resources
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.Properties.Resources.resources
+D:\Временное\game\Game2D\obj\x86\Debug\Game2D.csproj.GenerateResource.Cache

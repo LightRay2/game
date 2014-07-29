@@ -69,6 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\Config.cs" />
+    <Compile Include="Game\Abstract\Component.cs" />
+    <Compile Include="Game\Concrete\ChatManager.cs" />
+    <Compile Include="Game\Concrete\Components\TextField.cs" />
+    <Compile Include="Game\DataClasses\Main\DChat.cs" />
     <Compile Include="Game\Concrete\Local\MenuMain.cs" />
     <Compile Include="Game\Concrete\Network\NetworkController.cs" />
     <Compile Include="Game\Concrete\Battle\PlayerManager.cs" />
@@ -135,9 +139,7 @@
       <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Game\Abstract\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

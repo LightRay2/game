@@ -48,4 +48,29 @@ namespace Utils.Commands
         }
         public ComRemovePlayer() { }
     }
+
+    public class ComIngameChat : Command
+    {
+        public int Id;
+        public string Message;
+
+        public ComIngameChat() { }
+
+        public ComIngameChat(int id, string message)
+        {
+            Id = id;
+            Message = message;
+        }
+
+        protected override void SetFields(ref List<byte> data)
+        {
+            Id = HEncoder.GetInt(ref data);
+            Message = HEncoder.GetString(ref data);
+        }
+
+        public override List<byte> GetByteData()
+        {
+            return HEncoder.Encode(base.type,Id,Message);
+        }
+    }
 }
