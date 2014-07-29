@@ -17,6 +17,7 @@ namespace Game2D.Game
         TankDriverSimple _tankDriver = new TankDriverSimple();
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
+        ACameraMover _cameraMover = new ACameraMover();
 
         //данные
         DStateMain _state = new DStateMain();
@@ -38,6 +39,7 @@ namespace Game2D.Game
             if (_state.state == DStateMain.EState.inBattle)
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
+                _cameraMover.Process(serverCommands, _state, ref frame, keyboard);
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);
