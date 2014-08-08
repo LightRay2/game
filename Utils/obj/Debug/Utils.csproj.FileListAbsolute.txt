@@ -8,3 +8,8 @@ D:\docum\_PROJECTS\_EarlyVersions\Utils\bin\Debug\Utils.pdb
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\ResolveAssemblyReference.cache
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\Utils.dll
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\Utils.pdb
+C:\Users\Alexandr\Documents\game\Utils\bin\Debug\Utils.dll
+C:\Users\Alexandr\Documents\game\Utils\bin\Debug\Utils.pdb
+C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.dll
+C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.pdb
