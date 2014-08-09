@@ -62,7 +62,7 @@ namespace Game2D.Opengl
             //сразу засекаем следующие миллисекунды. Если рисование затянется, оно вызовется, как только дорисуем прежнее.
             Glut.glutTimerFunc(ConfigOpengl.TimePerFrame, MainProcess, 0);
 
-            VerySpecialKeys(); //читаем альт шифт контрол
+            //VerySpecialKeys(); //читаем альт шифт контрол
             _curFrame = _game.Process(_keyboardState);
             _keyboardState.StepEnded(); //игра считала кнопки, время классу сделать плановые действия
             
@@ -126,14 +126,16 @@ namespace Game2D.Opengl
 
         public void KeySpecialUp(int key, int x, int y)
         {
-            if (key >= 0 && key <= 11) _keyboardState.KeyUp((byte)(key + 131)); //f1-f12
-            if (key >= 100 && key <= 103) _keyboardState.KeyUp((byte)(key -63)); //arrows
+            if (1 <= key && key <= 12) _keyboardState.KeyUp((byte)(key+127));
+            else if (100 <= key && key <= 108) _keyboardState.KeyUp((byte)(key+48));
+            else _keyboardState.KeyUp((byte)key);
         }
 
         public void KeySpecial(int key, int x, int y)
         {
-            if (key >= 0 && key <= 11) _keyboardState.KeyPress((byte)(key + 131)); //f1-f12
-            if (key >= 100 && key <= 103) _keyboardState.KeyPress((byte)(key - 63)); //arrows
+            if (1 <= key && key <= 12) _keyboardState.KeyPress((byte)(key+127));
+            else if (100 <= key && key <= 108) _keyboardState.KeyPress((byte)(key+48));
+            else _keyboardState.KeyPress((byte)key);
         }
 
         bool lshift, rshift, lctrl, rctrl, lalt, ralt;

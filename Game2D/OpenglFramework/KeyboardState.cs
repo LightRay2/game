@@ -41,33 +41,17 @@ namespace Game2D.Opengl
         //-------------------------------------------------------------------------
         public void KeyPress(byte key)
         {
-            enteredString += Encoding.GetEncoding(1251).GetString(new byte[] { key });
-            if (key == 168) key = (byte)engE;
-            else if (key == 184) key = (byte)enge;
-            else if (key >= 192)
-            {
-                char k = englishEquvalents[key - 192];
-                key = (byte)k;
-            }
-            if (key >= (byte)'a' && key <= (byte)'z') key -= 32;
-           
-
-            if(_actionTime[key] == 0) _actionTime[key] = 1;
-
+            enteredString += Encoding.GetEncoding(1251).GetString(new Byte[] {key});
+            if(_actionTime[key] == 0)
+                _actionTime[key] = 1;
             pressedKeys.Add(key);
         }
+
         public void KeyUp(byte key)
         {
-            if (key == 168) key = (byte)engE;
-            else if (key == 184) key = (byte)enge;
-            else if (key >= 192)
-            {
-                char k = englishEquvalents[key - 192];
-                key = (byte)k;
-            }
-            if (key >= (byte)'a' && key <= (byte)'z') key -= 32;
             _actionTime[key] = 0;
         }
+
         public void RefreshKeys()
         {
             foreach (Key key in ConfigOpengl.Keys.Values)

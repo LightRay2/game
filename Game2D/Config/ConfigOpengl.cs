@@ -55,19 +55,13 @@ namespace Game2D
             LoadSpritesAuto();
             Sprites[ESprite.explosion.ToString()].horFrames = Sprites[ESprite.explosion.ToString()].vertFrames = 4;
 
-            // Про коды клавиш:
-            // везде, где есть латинская буква, код клавиши равен коду большой латинской буквы ('ф'='A' = 65). 
-            // где нет латинской буквы, с зажатым и нет shift получаются разные коды.
-            // f1-f12 : 131-142.
-            // shift,ctrl,alt : 160-165.
-            // Остальное по стандарту. 
-            Keys.Add(EKeyboardAction.Fire, 32);
-            Keys.Add(EKeyboardAction.Esc, 27);
-            Keys.Add(EKeyboardAction.Enter, 13);
-            Keys.Add(EKeyboardAction.Left, 37);
-            Keys.Add(EKeyboardAction.Up, 38);
-            Keys.Add(EKeyboardAction.Right, 39);
-            Keys.Add(EKeyboardAction.Down, 40);
+            Keys.Add(EKeyboardAction.Fire,32); // SPACE
+            Keys.Add(EKeyboardAction.Esc,27); // ESCAPE
+            Keys.Add(EKeyboardAction.Enter,13); // ENTER
+            Keys.Add(EKeyboardAction.Left,140);
+            Keys.Add(EKeyboardAction.Up,141);
+            Keys.Add(EKeyboardAction.Right,142);
+            Keys.Add(EKeyboardAction.Down,143);
             Keys.Add(EKeyboardAction.Chat,9); // TAB
 
             byte i = 0;

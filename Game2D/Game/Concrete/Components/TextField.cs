@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+using System.IO;
 
 using Game2D.Game.Abstract;
 using Game2D.Game.DataClasses;
@@ -13,10 +14,11 @@ namespace Game2D.Game.Concrete
     class TextField : Component
     {
         private const byte flashMaxValue = 32;
-        private readonly short[] specialCharacters = new Int16[] {8,32,37,39,127};
+        private readonly byte[] specialCharacters = new Byte[] {8,32,127,148,150,154,155,156};
 
         private int cursorPosition = 0,
             flashValue = flashMaxValue;
+        private bool replace = false;
         private EFont font = EFont.green;
         private string text = String.Empty;
         private int maxLength = 96;
@@ -66,14 +68,31 @@ namespace Game2D.Game.Concrete
         private string clearString(string message)
         {
             for (int i = 0; i < message.Length; i++)
-                if (ConfigOpengl.FontLetters.IndexOf(message[i]) == -1 && !Array.Exists(specialCharacters,value => value == (short)message[i]))
+            {
+                byte code = convertKey(Encoding.GetEncoding(1251).GetBytes(new Char[] {message[i]})[0]);
+                if (ConfigOpengl.FontLetters.IndexOf(message[i]) == -1 && !Array.Exists(specialCharacters,value => value == code))
                     message = message.Remove(i,1);
+                if (code == 145 || code == 147)
+                    message = message.Insert(i,Encoding.GetEncoding(1251).GetString(new Byte[] {code}));
+            }
             return message;
+        }
+
+        private byte convertKey(byte key)
+        {
+            switch (key)
+            {
+                case 34: key = 147; break;
+                case 39: key = 145; break;
+            }
+            return key;
         }
 
         private void handleKeys(string keys)
         {
-            foreach (int key in keys)
+            for (int i = 0; i < keys.Length; i++)
+            {
+                byte key = Encoding.GetEncoding(1251).GetBytes(new Char[] {keys[i]})[0];
                 switch (key)
                 {
                     case 8: // Backspace
@@ -83,26 +102,33 @@ namespace Game2D.Game.Concrete
                             cursorPosition--;
                         }
                         break;
-                    case 37: // Left Arrow
-                        if (cursorPosition != 0)
-                            cursorPosition--;
-                        break;
-                    case 39: // Right Arrow
-                        if (cursorPosition < text.Length)
-                            cursorPosition++;
-                        break;
                     case 127: // Delete
                         if (cursorPosition < text.Length)
                             text = text.Remove(cursorPosition,1);
                         break;
+                    case 148: // Left Arrow
+                        if (cursorPosition != 0)
+                            cursorPosition--;
+                        break;
+                    case 150: // Right Arrow
+                        if (cursorPosition < text.Length)
+                            cursorPosition++;
+                        break;
+                    case 154: cursorPosition = 0; break; // Home
+                    case 155: cursorPosition = text.Length; break; // End
+                    case 156: replace = !replace; break; // Insert
                     default:
                         if (text.Length < maxLength)
                         {
-                            text = text.Insert(cursorPosition,((char)key).ToString());
+                            string c = Encoding.GetEncoding(1251).GetString(new Byte[] {key});
+                            if (replace && cursorPosition != text.Length)
+                                text = text.Remove(cursorPosition,1);
+                            text = text.Insert(cursorPosition,c);
                             cursorPosition++;
                         }
                         break;
                 }
+            }
         }
 
         private string flashCursor()
