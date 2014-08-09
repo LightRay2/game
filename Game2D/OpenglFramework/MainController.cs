@@ -62,7 +62,7 @@ namespace Game2D.Opengl
             //сразу засекаем следующие миллисекунды. Если рисование затянется, оно вызовется, как только дорисуем прежнее.
             Glut.glutTimerFunc(ConfigOpengl.TimePerFrame, MainProcess, 0);
 
-            //VerySpecialKeys(); //читаем альт шифт контрол
+            VerySpecialKeys(); //читаем альт шифт контрол
             _curFrame = _game.Process(_keyboardState);
             _keyboardState.StepEnded(); //игра считала кнопки, время классу сделать плановые действия
             
