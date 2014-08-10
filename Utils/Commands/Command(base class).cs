@@ -18,6 +18,9 @@ namespace Utils.Commands
             typeof(ComAddPlayer),
             typeof(ComRemovePlayer),
             typeof(ComReceivedCommandsCount),//служебная
+            typeof(ComShootToPoint),
+            typeof(ComSpreadIndex),
+            typeof(ComShootMain)
         };
 
         #region абстрактные методы

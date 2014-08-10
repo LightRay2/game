@@ -40,7 +40,7 @@ namespace Game2D.Game
             if (_state.state == DStateMain.EState.inBattle)
             {
                 _playerManaged.Process(serverCommands, _state, ref frame);
-                _shootingMain.Process(serverCommands, _state, keyboard, ref frame);
+                createdCommands.AddRange(_shootingMain.Process(serverCommands, _state, keyboard, ref frame));
             }
             //-------------------------------------------------------------------------------------
             _networkController.SendCommands(createdCommands);

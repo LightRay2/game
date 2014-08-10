@@ -37,5 +37,10 @@ namespace Utils.Boxes
         {
             return now + plus ==max;
         }
+
+        public double GetPart()
+        {
+            return now / max;
+        }
     }
 }

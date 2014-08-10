@@ -56,7 +56,7 @@ namespace Game2D.Game.Concrete
             DPlayer player = new DPlayer(id, nickname, false, new DTank());
             player.tank.ID = id;
             player.tank.controlled = player.controlled;      
-            player.tank.body = new DTankBody(new Vector2(-100, -100, 0), ESprite.tank0);
+            player.tank.body = new DTankBody(new Vector2(20, 20, 0), ESprite.tank0);
             return player;
         }
     }

@@ -7,6 +7,7 @@ namespace Utils.Helpers
 {
     public class HRandomDoubleGroup
     {
+        public const int COUNT = 200;
         /// <summary>
         /// тут есть 200 групп по 100 штук
         /// </summary>

@@ -9,11 +9,11 @@ namespace Game2D.Game.DataClasses
     class DLighthouse
     {
         public const double distBetweenPoints = 0.5;
-        public const int nearestPoint = 5;
+        public const int nearestPoint = 20;
 
         public int sightCount=4;
-        public int pointMaxCount=300;
-        public int currentSight = 0;
+        public int pointMaxCount=200;
+        public int currentSight = 3;
         public Vector2 pos = new Vector2(0,0,0); //относительно
 
         public int firstSight=60, lastSight=200; //место первого и последнего прицела
@@ -44,6 +44,12 @@ namespace Game2D.Game.DataClasses
             int pointNum = num==sightCount-1? lastSight: firstSight + (lastSight-firstSight)/(sightCount-1)*num;
             return new Vector2(start +
                 new Vector2(new Point2(0, 0), pos.angleDeg, distBetweenPoints * pointNum).vector, pos.angleDeg, 1);
+        }
+
+        public double GetPartOfMax()
+        {
+            int pointNum = currentSight == sightCount - 1 ? lastSight : firstSight + (lastSight - firstSight) / (sightCount - 1) * currentSight;
+            return (double)pointNum / pointMaxCount;
         }
     }
 }

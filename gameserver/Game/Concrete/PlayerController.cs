@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Utils.Commands;
-using Game2D.Game.DataClasses;
+using gameserver.Game.DataClasses;
 
 namespace gameserver.Game.Concrete
 {

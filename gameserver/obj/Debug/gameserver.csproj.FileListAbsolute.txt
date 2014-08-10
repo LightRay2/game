@@ -72,3 +72,15 @@ D:\docum\_PROJECTS\_EarlyVersions\gameserver\obj\Debug\gameserver.pdb
 C:\Users\Alexandr\Documents\GitHub\game\gameserver\bin\Debug\gameserver.exe.config
 C:\Users\Alexandr\Documents\GitHub\game\gameserver\obj\Debug\gameserver.exe
 C:\Users\Alexandr\Documents\GitHub\game\gameserver\obj\Debug\gameserver.pdb
+C:\D\Lost\Мои документы\game-M\gameserver\bin\Debug\gameserver.exe.config
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\gameserver.exe
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\gameserver.pdb
+C:\D\Lost\Мои документы\game-M\gameserver\bin\Debug\gameserver.exe
+C:\D\Lost\Мои документы\game-M\gameserver\bin\Debug\gameserver.pdb
+C:\D\Lost\Мои документы\game-M\gameserver\bin\Debug\Utils.dll
+C:\D\Lost\Мои документы\game-M\gameserver\bin\Debug\Utils.pdb
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\ResolveAssemblyReference.cache
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\gameserver.FormMain.resources
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\GenerateResource.read.1.tlog
+C:\D\Lost\Мои документы\game-M\gameserver\obj\Debug\GenerateResource.write.1.tlog

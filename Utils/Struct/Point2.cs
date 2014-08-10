@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Utils
+namespace System
 {
     /// <summary>
     /// точка (или вектор, или размер), есть нормализация, расстояние, угол, перегрузка плюса и минуса
     /// </summary>
-    public struct Point2
+    public struct Point2 
     {
         public double x, y;
         public Point2(double x, double y)

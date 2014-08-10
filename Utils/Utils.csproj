@@ -45,11 +45,16 @@
     <Compile Include="Commands\ForConnection.cs" />
     <Compile Include="Commands\NetworkOrganisation.cs" />
     <Compile Include="Commands\PlayersInteraction.cs" />
-    <Compile Include="Commands\ShootingMain.cs" />
+    <Compile Include="Commands\ShootingCom.cs" />
+    <Compile Include="DataClasses\DGun.cs" />
+    <Compile Include="DataClasses\DShell.cs" />
+    <Compile Include="DataClasses\DShooting.cs" />
     <Compile Include="Helpers\Generators\RandomGroups.cs" />
     <Compile Include="Helpers\HEncoder.cs" />
     <Compile Include="Helpers\HLog.cs" />
     <Compile Include="Helpers\HRandomDoubleGroup.cs" />
+    <Compile Include="Helpers\HShells.cs" />
+    <Compile Include="Helpers\Rand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Struct\Point2.cs" />
     <Compile Include="Struct\Vector2.cs" />

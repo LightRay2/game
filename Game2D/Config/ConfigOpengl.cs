@@ -12,7 +12,7 @@ namespace Game2D
     //(т.е. только png)
     public enum ESprite { background, menuback, shell0,tank0, tank1, tank2,explosion,
         shootMarkBright, shootMarkDark, gunMarkBright, gunMarkDark,
-        AimEllipse,
+        AimEllipse, indicator,
         end }
     public enum EFont {  orange, fiol,  green,lilac, end }
     
@@ -58,7 +58,8 @@ namespace Game2D
         {
             LoadSpritesAuto();
             Sprites[ESprite.explosion.ToString()].horFrames = Sprites[ESprite.explosion.ToString()].vertFrames = 4;
-
+            Sprites[ESprite.shell0.ToString()].horFrames = 4;
+            Sprites[ESprite.indicator.ToString()].horFrames = 4;
             // Про коды клавиш:
             // везде, где есть латинская буква, код клавиши равен коду большой латинской буквы ('ф'='A' = 65). 
             // где нет латинской буквы, с зажатым и нет shift получаются разные коды.

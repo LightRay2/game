@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;  
 
-namespace Utils
+namespace System
 {
     /// <summary>
     /// вектор с заданным началом(или горизонтальный прямоугольник), несколько вспомогательных функции

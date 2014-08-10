@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game\Concrete\PlayerController.cs" />
-    <Compile Include="Game\Concrete\ServerShellCreator.cs" />
+    <Compile Include="Game\Concrete\SShellController.cs" />
     <Compile Include="Game\DataClasses\Main\DBattle.cs" />
     <Compile Include="Game\DataClasses\Main\DPlayer.cs" />
     <Compile Include="Game\DataClasses\Main\DStateMain.cs" />
@@ -69,8 +69,6 @@
     <Compile Include="Network\Concrete\Settings.cs" />
     <Compile Include="Network\Concrete\Miscellaneous\Utilities.cs" />
     <Compile Include="Network\Structures\AngleF.cs" />
-    <Compile Include="Struct\Point2.cs" />
-    <Compile Include="Struct\Vector2.cs" />
     <EmbeddedResource Include="Network\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,7 +101,9 @@
       <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Struct\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

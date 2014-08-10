@@ -8,3 +8,8 @@ D:\docum\_PROJECTS\_EarlyVersions\Utils\bin\Debug\Utils.pdb
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\ResolveAssemblyReference.cache
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\Utils.dll
 D:\docum\_PROJECTS\_EarlyVersions\Utils\obj\Debug\Utils.pdb
+C:\D\Lost\Мои документы\game-M\Utils\bin\Debug\Utils.dll
+C:\D\Lost\Мои документы\game-M\Utils\bin\Debug\Utils.pdb
+C:\D\Lost\Мои документы\game-M\Utils\obj\Debug\ResolveAssemblyReference.cache
+C:\D\Lost\Мои документы\game-M\Utils\obj\Debug\Utils.dll
+C:\D\Lost\Мои документы\game-M\Utils\obj\Debug\Utils.pdb

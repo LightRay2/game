@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game2D.Game.DataClasses
+namespace gameserver.Game.DataClasses
 {
     class DTankBody
     {
