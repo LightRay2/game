@@ -36,9 +36,13 @@ namespace Game2D.Game.Concrete
 
         public void Process(List<Command> serverCommands, DStateMain sceneState, ref Frame resultFrame, IGetKeyboardState keyboardState)
         {
-            //KeyProcess(keyboardState);
             HoldAndDragProcess(keyboardState);
-            ActiveSidesProcess();
+            
+            if (!mouseClicked)
+            {
+                ActiveSidesProcess();
+                //KeyProcess(keyboardState);
+            }
 
             resultFrame.camera = cameraPosition;   //updating camera position
         }

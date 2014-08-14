@@ -10,8 +10,21 @@ namespace Game2D
     //Доступные спрайты. end - чтобы можно было легко пробежать по всем
     //чтобы работала автозагрузка, пути к файлам должны быть: textures/background.png, font/orange.png
     //(т.е. только png)
-    public enum ESprite { background, menuback, shell0,tank0, tank1, tank2,explosion, end }
-    public enum EFont {  orange, fiol,  green,lilac, end }
+    public enum ESprite {
+        background, menuback, shell0, tank0, tank1, tank2, explosion,
+        grass,
+        u5, r5, d5, l5,
+        u6, r6, d6, l6,
+        u7, r7, d7, l7,
+        u8, r8, d8, l8,
+        u9, r9, d9, l9,
+        u11, r11, d11, l11,
+        u12, r12, d12, l12,
+        u13, r13, d13, l13,
+        u14, r14, d14, l14,
+        u15, r15, d15, l15,
+        end }
+    public enum EFont { orange, fiol, green, lilac, end }
     
     //действия, которые поддерживает клавиатура. Должны быть привязаны конкретные кнопки в конструкторе
     public enum EKeyboardAction { Fire, Esc, Enter,

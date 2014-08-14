@@ -20,6 +20,7 @@ namespace Game2D.Game
 
         ACameraMover _cameraMoover = new ACameraMover();
         ATankDriver _tankDriver = new ATankDriver();
+        AMapDriver _mapDriver = new AMapDriver();
 
         //данные
         DStateMain _state = new DStateMain();
@@ -43,6 +44,7 @@ namespace Game2D.Game
                 _playerManaged.Process(serverCommands, _state, ref frame);
 
                 _cameraMoover.Process(serverCommands, _state, ref frame, keyboard);
+                _mapDriver.Process(serverCommands, _state, ref frame);
                 _tankDriver.Process(serverCommands, _state, ref frame, keyboard);
             }
             //-------------------------------------------------------------------------------------
