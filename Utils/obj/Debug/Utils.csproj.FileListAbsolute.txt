@@ -13,3 +13,8 @@ C:\Users\Alexandr\Documents\game\Utils\bin\Debug\Utils.pdb
 C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
 C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.dll
 C:\Users\Alexandr\Documents\game\Utils\obj\Debug\Utils.pdb
+C:\Users\Alexandr\Desktop\game\Utils\bin\Debug\Utils.dll
+C:\Users\Alexandr\Desktop\game\Utils\bin\Debug\Utils.pdb
+C:\Users\Alexandr\Desktop\game\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\game\Utils\obj\Debug\Utils.dll
+C:\Users\Alexandr\Desktop\game\Utils\obj\Debug\Utils.pdb

@@ -70,3 +70,13 @@ C:\Users\Alexandr\Documents\Game\Game2D\obj\x86\Debug\Game2D.csprojResolveAssemb
 C:\Users\Alexandr\Documents\Game\Game2D\obj\x86\Debug\Game2D.Form1.resources
 C:\Users\Alexandr\Documents\Game\Game2D\obj\x86\Debug\Game2D.Properties.Resources.resources
 C:\Users\Alexandr\Documents\Game\Game2D\obj\x86\Debug\Game2D.csproj.GenerateResource.Cache
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.exe
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.pdb
+C:\Users\Alexandr\Desktop\game\Game2D\bin\Debug\Game2D.exe
+C:\Users\Alexandr\Desktop\game\Game2D\bin\Debug\Game2D.pdb
+C:\Users\Alexandr\Desktop\game\Game2D\bin\Debug\Utils.dll
+C:\Users\Alexandr\Desktop\game\Game2D\bin\Debug\Utils.pdb
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.Form1.resources
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.Properties.Resources.resources
+C:\Users\Alexandr\Desktop\game\Game2D\obj\x86\Debug\Game2D.csproj.GenerateResource.Cache

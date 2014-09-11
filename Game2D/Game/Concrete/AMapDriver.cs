@@ -18,7 +18,7 @@ namespace Game2D.Game.Concrete
 
         public AMapDriver()
         {
-            v_map = new AVertexMap(33, 33, 1, 1, 20, 10);
+            v_map = new AVertexMap(65, 65, 1, 1, 30, 5);
             l_map = new ALightMap(v_map);
         }
 

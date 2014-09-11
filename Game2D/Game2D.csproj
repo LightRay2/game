@@ -70,8 +70,12 @@
   <ItemGroup>
     <Compile Include="Game\Concrete\ACameraMover.cs" />
     <Compile Include="Config\Config.cs" />
+    <Compile Include="Game\Concrete\AMapDriver.cs" />
     <Compile Include="Game\Concrete\ATankDriver.cs" />
     <Compile Include="Game\Concrete\Local\MenuMain.cs" />
+    <Compile Include="Game\Concrete\Map\ALightMap.cs" />
+    <Compile Include="Game\Concrete\Map\AMath3.cs" />
+    <Compile Include="Game\Concrete\Map\AVertexMap.cs" />
     <Compile Include="Game\Concrete\Network\NetworkController.cs" />
     <Compile Include="Game\Concrete\Battle\PlayerManager.cs" />
     <Compile Include="Game\Concrete\Local\RedactorIP.cs" />

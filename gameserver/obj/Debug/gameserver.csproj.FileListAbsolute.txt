@@ -83,3 +83,14 @@ C:\Users\Alexandr\Documents\Game\gameserver\obj\Debug\gameserver.csprojResolveAs
 C:\Users\Alexandr\Documents\Game\gameserver\obj\Debug\gameserver.FormMain.resources
 C:\Users\Alexandr\Documents\Game\gameserver\obj\Debug\gameserver.Properties.Resources.resources
 C:\Users\Alexandr\Documents\Game\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache
+C:\Users\Alexandr\Desktop\game\gameserver\bin\Debug\gameserver.exe.config
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.exe
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.pdb
+C:\Users\Alexandr\Desktop\game\gameserver\bin\Debug\gameserver.exe
+C:\Users\Alexandr\Desktop\game\gameserver\bin\Debug\gameserver.pdb
+C:\Users\Alexandr\Desktop\game\gameserver\bin\Debug\Utils.dll
+C:\Users\Alexandr\Desktop\game\gameserver\bin\Debug\Utils.pdb
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.FormMain.resources
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+C:\Users\Alexandr\Desktop\game\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache
